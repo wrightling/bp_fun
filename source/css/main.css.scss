@@ -93,9 +93,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+$blueish: #e2edff;
+
 body {
     font-family: Helvetica, Arial, sans-serif;
-    background-color: #e2edff;
+    background-color: $blueish;
     padding: 15px;
 }
 
