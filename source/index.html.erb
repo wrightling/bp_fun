@@ -1,12 +1,15 @@
 ---
-title: The Most Basic Webpage in the World
+title: Site Training
 ---
 
 <!-- Add your site or application content here -->
-<h1>Hello world!</h1>
-<p><%= lorem.paragraphs 2%></p>
-<p><%= lorem.paragraph %></p>
-<h2>a list</h2>
-<ul>
-</ul>
-<p><%= link_to 'playing with link_to', 'http://google.com' %></p>
+<%= partial "partials/header" %>
+<%= partial "partials/navigation" %>
+<div id="bodycontent">
+  <h2>Welcome to the site!</h2>
+  <p><%= tag :img, :src => "/img/divers-circle.jpg",
+                  :alt => "A circle of divers practice their skills" %></p>
+                  <p><span class="companyname">Site Training</span> is for playing with Middleman, HTML, and CSS.</p>
+  <p><%= lorem.words 2 %> <em><%= lorem.word %></em> <strong><%= lorem.words 2 %></strong></p>
+  <p><%= lorem.paragraph %></p>
+</div>
